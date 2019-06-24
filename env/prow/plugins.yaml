@@ -33,13 +33,13 @@ plugins:
   - approve
   - assign
   - blunderbuss
+  - help
   - hold
   - lgtm
   - lifecycle
   - size
   - trigger
   - wip
-  - heart
   - cat
   - override
   dconde-jx-test/environment-davec-test-gitops29-production:
