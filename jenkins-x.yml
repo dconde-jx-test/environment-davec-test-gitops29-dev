@@ -1,6 +1,6 @@
 pipelineConfig:
   env:
-  - name: COVER_JX_BINARY
+  - name: COVER_SELF_UPLOAD
     value: "false"
   agent:
     container: jenkinsxio/builder-go:covered-0.0.0-SNAPSHOT-PR-4331-37
