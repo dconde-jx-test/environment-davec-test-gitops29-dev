@@ -1,4 +1,5 @@
 jenkins-x-platform:
+  test: true
   PipelineSecrets:
     DockerConfig: |-
       {
