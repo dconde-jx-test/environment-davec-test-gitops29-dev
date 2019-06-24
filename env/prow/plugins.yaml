@@ -1,0 +1,108 @@
+approve:
+- lgtm_acts_as_approve: true
+  repos:
+  - dconde-jx-test/environment-davec-test-gitops29-dev
+  require_self_approval: true
+- lgtm_acts_as_approve: true
+  repos:
+  - dconde-jx-test/environment-davec-test-gitops29-production
+  require_self_approval: true
+- lgtm_acts_as_approve: true
+  repos:
+  - dconde-jx-test/environment-davec-test-gitops29-staging
+  require_self_approval: true
+- lgtm_acts_as_approve: true
+  repos:
+  - jenkins-x/dummy
+  require_self_approval: true
+blunderbuss: {}
+cat: {}
+cherry_pick_unapproved: {}
+config_updater:
+  maps:
+    env/prow/config.yaml:
+      name: config
+    env/prow/plugins.yaml:
+      name: plugins
+heart: {}
+owners: {}
+plugins:
+  dconde-jx-test/environment-davec-test-gitops29-dev:
+  - config-updater
+  - config-updater
+  - approve
+  - assign
+  - blunderbuss
+  - help
+  - hold
+  - lgtm
+  - lifecycle
+  - size
+  - trigger
+  - wip
+  - heart
+  - cat
+  - override
+  dconde-jx-test/environment-davec-test-gitops29-production:
+  - config-updater
+  - approve
+  - assign
+  - blunderbuss
+  - help
+  - hold
+  - lgtm
+  - lifecycle
+  - size
+  - trigger
+  - wip
+  - heart
+  - cat
+  - override
+  dconde-jx-test/environment-davec-test-gitops29-staging:
+  - config-updater
+  - approve
+  - assign
+  - blunderbuss
+  - help
+  - hold
+  - lgtm
+  - lifecycle
+  - size
+  - trigger
+  - wip
+  - heart
+  - cat
+  - override
+  jenkins-x/dummy:
+  - config-updater
+  - approve
+  - assign
+  - blunderbuss
+  - help
+  - hold
+  - lgtm
+  - lifecycle
+  - size
+  - trigger
+  - wip
+  - heart
+  - cat
+  - override
+requiresig: {}
+sigmention: {}
+slack: {}
+triggers:
+- repos:
+  - dconde-jx-test/environment-davec-test-gitops29-dev
+  trusted_org: dconde-jx-test
+- repos:
+  - dconde-jx-test/environment-davec-test-gitops29-production
+  trusted_org: dconde-jx-test
+- repos:
+  - dconde-jx-test/environment-davec-test-gitops29-staging
+  trusted_org: dconde-jx-test
+- repos:
+  - jenkins-x/dummy
+  trusted_org: jenkins-x
+welcome:
+- message_template: Welcome
