@@ -3,8 +3,7 @@ approve:
   repos:
   - dconde-jx-test/environment-davec-test-gitops29-dev
   require_self_approval: true
-- issue_required: true
-  lgtm_acts_as_approve: true
+- lgtm_acts_as_approve: true
   repos:
   - dconde-jx-test/environment-davec-test-gitops29-production
   require_self_approval: true
@@ -34,7 +33,6 @@ plugins:
   - approve
   - assign
   - blunderbuss
-  - help
   - hold
   - lgtm
   - lifecycle
