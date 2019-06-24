@@ -13,3 +13,5 @@ jenkins-x-platform:
       }
   postinstalljob:
     enabled: "true"
+  nexus:
+    enables: "false"
